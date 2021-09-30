@@ -1,0 +1,11 @@
+@import "~bootstrap/scss/bootstrap";
+@import url(./_reset.scss);
+@import url(./_fonts.scss);
+
+body {
+    font-family: 'Open Sans';
+}
+
+.container {
+    max-width: 970px;
+}
