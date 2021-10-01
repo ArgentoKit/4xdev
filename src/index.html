@@ -6,15 +6,179 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./assets/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
     <title>FOREX TESTER</title>
 </head>
 
 <body>
     <header class="header"">
         <div class=" container">
-            
+            <div class="header__top">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">プログラムのご紹介</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">機能</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">機能</a>
+                            <a class="dropdown-item" href="#">機能</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">ご使用方法</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">ご使用方法</a>
+                            <a class="dropdown-item" href="#">ご使用方法</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">過去データ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">アフィリエイト</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">アフィリエイト</a>
+                            <a class="dropdown-item" href="#">アフィリエイト</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">お問い合わせ</a>
+                    </li>
+                </ul>
+                <div class="nav-button">
+                    <button class="btn download" type="button">ダウンロード</button>
+                    <button class="btn buy" type="button">購入する</button>
+                </div>
+            </div>
+            <div class="header__content">
+                <div class="header__middle">
+                    <div class="row">
+                        <div class="col-sm">
+                            <img class="logo" src="./assets/logo.svg"
+                                onerror="this.onerror=null; this.src='./assets/logo.png'">
+                            <img src="./assets/logo-text.svg"
+                                onerror="this.onerror=null; this.src='./assets/logo-text.png'">
+                        </div>
+                        <div class="col-sm">
+                            <div class="language">
+                                <img class="japan" src="./assets/japan.png" alt="japan">
+                                <div class="dropdown drop-language">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        日本語
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">日本語</a>
+                                        <a class="dropdown-item" href="#">日本語</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <div class="row">
+                        <div class="col header__bottom-content">
+                            <div class="header__bottom-about">
+                                <p><span>Forex Tester</span>はFXマーケットのトレードをシミュレーションできるソフトウェアです</p>
+                                <p><span>FX</span>トレードストラテジーを作り、テストし、修正し、利益を上げる方を学べます。（マニュアルトレードも自動売買もテストできます。）</p>
+                            </div>
+                            <div class="header__bottom-list">
+                                <ul class="list">
+                                    <li class="list__item" style="background-image: url(./assets/arrow.svg);">ストラテジーをテストし改善し、継続的に安定的な利益を！</li>
+                                    <li class="list__item" style="background-image: url(./assets/arrow.svg);">トレードストラテジーに確信を持つことで、ライブトレードをするときに、頭がクリアになりミスを防げます</li>
+                                    <li class="list__item" style="background-image: url(./assets/arrow.svg);">トレードを学び、成功トレーダーになりましょう！</li>
+                                </ul>
+                            </div>
+                            <div class="motivation">
+                                <div class="row">
+                                    <div class="col motivation__button">
+                                        <button class="btn trial" style="background-image: url(./assets/play.png);">
+                                            トライアル版のダウンロード
+                                        </button>
+                                    </div>
+                                    <div class="col motivation__text">
+                                        <span class="text-top">成功への投資</span>
+                                        <span class="text-bottom">FOREX TESTER SOFTWARE</span>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col header__bottom-img">
+                            <img class="box" src="./assets/box.png" alt="box">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
+    <section class="discounts">
+        <div class="container">
+            <div class="discounts__inner">
+                <div class="row">
+                    <div class="col">
+                        <img class="man" src="./assets/man.png" alt="man">
+                    </div>
+                    <div class="col sale">
+                        <h4 class="sale__title">#ステイアットホームセール</h4>
+                        <span>在宅期間に、追加のディスカウントをゲットしよう。</span>
+                        <ul class="sale__list">
+                            <li class="sale__item">バックテストソフトを¥<span class="discount">11000</span>ディスカウント</li>
+                            <li class="sale__item">データ購読サービスで最大¥<span class="discount">6000</span>の値引き</li>
+                            <li class="sale__item">セット購入で¥<span class="discount">13000</span>から¥<span class="discount">70900</span>セーブ</li>
+                        </ul>
+                        <div class="sale__button">
+                            <button class="btn">FOREX TESTER4を購入</button>
+                        </div>
+                    </div>
+                    <div class="col countdown">
+                        <p class="red">見逃すな！</p>
+                        <p class="blue">キャンペーン終了まで:</p>
+                        <ul class="flip-clock-container box">
+                            <li class="flip-item-seconds">23</li>
+                            <li class="flip-item-minutes">38</li>
+                            <li class="flip-item-hours">23</li>
+                            <li class="flip-item-days">01</li>
+                        </ul>
+                        <button class="btn new-version">新バージョンを知ろう</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="introduction">
+        <div class="container">
+            <div class="introduction__inner" style="background-image: url(./assets/introduction.jpg);">
+                <div class="row">
+                    <div class="col">
+                        <img class="box-small" src="./assets/box-small.png" alt="Tester">
+                    </div>
+                    <div class="col">
+                        <h2 class="introduction__title">
+                            フォレックステスター４のイントロダクション
+                        </h2>
+                        <span>まったく新しいアプローチのバックテストを体験しよう：</span>
+                        <ul class="introduction__list">
+                            <li class="introduction__item" style="background-image: url(./assets/check.svg);">ファンダメンタルトレーダーのためのニュースと経済カレンダー</li>
+                            <li class="introduction__item" style="background-image: url(./assets/check.svg);">800以上の新しいシンボルが追加されました（株式/インデックス/暗号通貨）</li>
+                            <li class="introduction__item" style="background-image: url(./assets/check.svg);">ビジュアルストラテジー/インジケータービルダー</li>
+                            <li class="introduction__item" style="background-image: url(./assets/check.svg);">リスク管理機能が含まれています</li>
+                            <li class="introduction__item" style="background-image: url(./assets/check.svg);">ブローカーの手数料も追加して計算できます。</li>
+                            <li class="introduction__item" style="background-image: url(./assets/check.svg);">メモとメモ帳</li>
+                            <li class="introduction__item" style="background-image: url(./assets/check.svg);">さらなる機能…</li>
+                        </ul>
+                        <div class="introduction__buttons">
+                            <button class="btn buy">を購入する Forex Tester 4</button>
+                            <button class="btn update">今アップグレードして</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/flip-clock.js"></script>
 </body>
 
 </html>
