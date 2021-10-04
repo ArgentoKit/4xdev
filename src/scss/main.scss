@@ -1,10 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
-@import './reset';
-@import './flip-clock';
+@import 'reset';
+@import 'flip-clock';
 
 body {
     font-family: 'Open Sans';
     color: #fff;
+    overflow-x: hidden;
 }
 
 .container {
@@ -69,7 +70,7 @@ body {
             justify-content: flex-end;
         }
     }
-
+    
     .btn {
         border: 0;
         border-radius: 0;
@@ -96,6 +97,10 @@ body {
             background-color: #5d69e9;
         }
     }
+    
+    .nav-menu {
+        display: none;
+    }
 }
 
 .header__middle {
@@ -103,6 +108,10 @@ body {
 
     img {
         vertical-align: middle;
+    }
+
+    .logo-group {
+        min-width: 70%;
     }
 
     .logo {
@@ -215,7 +224,7 @@ body {
         border-radius: 0;
         background-color: #6B77FF;
         background-repeat: no-repeat;
-        background-position: 266px 50%;
+        background-position: 92% 50%;
         padding: 13px 90px 14px 18px;
         margin: 0 0 30px 22px;
     }
@@ -234,16 +243,16 @@ body {
         text-align: center;
     }
 
-    .header__bottom-img {
+    &-img {
         position: absolute;
         max-width: 321px;
         padding: 0;
         bottom: 50px;
-        right: 65px;
+        right: 50px;
     }
 
     .box {
-        margin-right: 15px;
+        max-width: 100%;
     }
 }
 
@@ -360,6 +369,10 @@ body {
 }
 
 .introduction {
+    &__inner {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .col:nth-child(1) {
         max-width: 367px;
         padding-right: 0;
@@ -428,3 +441,5 @@ body {
         margin-left: 40px;
     }
 }
+
+@import 'media';
