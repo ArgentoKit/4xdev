@@ -227,6 +227,10 @@ body {
         background-position: 92% 50%;
         padding: 13px 90px 14px 18px;
         margin: 0 0 30px 22px;
+
+        &:hover {
+            background-color: darken($color: #6B77FF, $amount: 5%);
+        }
     }
 
     .text-top {
@@ -333,6 +337,10 @@ body {
             line-height: 18px;
             padding: 19px 20px;
             margin-left: 33px;
+
+            &:hover {
+                background-color: darken($color: #FFAE29, $amount: 10%);
+            }
         }
     }
 
@@ -364,6 +372,10 @@ body {
             line-height: 18px;
             padding: 19px 19px;
             color: #F0F3F7;
+
+            &:hover {
+                background-color: darken($color: #00B896, $amount: 5%);
+            }
         }
     }
 }
@@ -429,6 +441,10 @@ body {
         color: #fff;
         padding: 12px;
         margin-left: 48px;
+
+        &:hover {
+            background-color: darken($color: #00B896, $amount: 5%);
+        }
     }
 
     .update {
@@ -439,6 +455,10 @@ body {
         color: #fff;
         padding: 12px 22px;
         margin-left: 40px;
+
+        &:hover {
+            background-color: darken($color: #00B896, $amount: 8%);
+        }
     }
 }
 

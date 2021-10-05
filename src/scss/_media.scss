@@ -2,11 +2,18 @@
     .header__bottom {
         &-img {
             max-width: 300px;
-            right: 10px;
+            right: 30px;
+            bottom: 30px;
         }
 
         &-about, &-list, .motivation {
             max-width: 55%;
+        }
+
+        .motivation {
+            .row {
+                flex-direction: column;
+            }
         }
 
         .trial {
@@ -14,7 +21,7 @@
         }
 
         .motivation__text {
-            margin-left: 22px;
+            margin: 0 0 20px 22px;;
         }
     }
 
